@@ -1,0 +1,69 @@
+Let's begin by generating a summary off our data set.
+So we're going to type in, describe open the bracket and type
+in DS, then hit Run.
+Once we get the output, we can see all the names off.
+The columns there are present in our data set as well as the
+minimum value, the median value and the maximum value.
+Here. Name refers to the title of the book, so it has taken
+the shortest title for minimum and the longest title for
+maximum.
+Then we have the author name once again, the shortest author
+name is the minimum, and the longest daughter name is the
+maximum.
+Then we have user ratings thes air float values, so it just
+takes the maximum and minimum accordingly.
+Then we have reviews.
+In this case, it refers to the number of reviews as we saw
+previously, so that's understood.
+Then we have the price once again float values and the year
+it seems to have taken it as float values for some of the
+numbers, which isn't a problem for us right now.
+And then we have the genre.
+Now the genre is actually to values that it's fiction and
+nonfiction, so looking at this summary table, we can decide
+on which column names we want to use, as are features and
+which one to use as a target.
+In this case, genre is the target, and it has two possible
+values fiction or nonfiction.
+We need to process this column, which we will work on later
+using the one hot and coding method.
+For now, let's just select our features.
+The name off the book will not really add value.
+Tow our analysis, so we're going to skip that now.
+The author Once again, that's not going to add value.
+So we're going to skip that.
+What we will focus on is the user rating the reviews, the
+price on the year.
+In other words, we're going to focus on the numeric values
+because our model works best with these numeric values.
+Now you must be wondering, are genre, which is the target?
+Variable is a string value, not a numeric.
+So how are we going to use this for a model?
+That's where one heart encoding comes into the picture.
+I will explain it in detail shortly.
+First, let's continue with our exploratory data analysis.
+Let's check out the number of rows and columns in our data
+set to get an idea off the size off the data set.
+To do this, we're going to use sites, function and within
+brackets.
+Type in D F hit run.
+So we have 550 rose and seven columns.
+As we can see here the seven columns, the next thing to do is
+to handle missing values.
+Now this data set was prepared in advance so that you don't
+have to worry about these things, and you can focus strictly
+on logistic regression.
+But it's good practice to handle the missing values.
+In this case, we can just drop any rows with missing values.
+So let's type and drop reaching open the bracket type in D F.
+And we'll print it out by using the first function saying DF
+and five, It's run.
+So this is the data frame once all the missing values have
+been removed.
+Of course, we can see only the first five rows because we
+insisted on the first five.
+But if you would like to see the complete data set just
+erased this line.
+Type in D F and hit run and you'll see all the rose in the
+next task.
+We'll talk about one hot encoding and see how it works.

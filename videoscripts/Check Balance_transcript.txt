@@ -1,0 +1,84 @@
+Now let's check if our data's balanced.
+To do this, we're going to use a package called Freak Table,
+which stands for frequency table, the type in using freak
+people that Plural Creek tables then hit Enter and we're just
+going to call the variable classes and say that seek looks
+Greek table, then open the bracket and the target.
+On the score final, I'm gonna square bracket Poland and type
+in chin and hit run.
+It might take a bit of time.
+That's totally normal.
+You should get a table like the one you see on my screen.
+Let's take some time to understand what this table means.
+Now, if you recall, we used one hot encoding, which means
+that under the column fiction we were checking if the genre
+fiction was present or not, and wherever it was present,
+we put a one, and wherever it was not present, we put a zero
+translating that true and false.
+All the zeros indicate faults and all the ones indicate true,
+which means if it's a false value, then it was nonfiction,
+and if it was a true value, it was fiction.
+Now that we wrapped our head around that Let's look
+at the number of values we have.
+We can see that nonfiction had 310 values on fiction had
+to 40 values.
+Since these numbers are not exactly equal, that makes
+this imbalanced.
+Now, why is this a problem if it's imbalanced?
+This means that for a model, we need to look at the number
+off. True positives, false positives, true negatives
+and false negatives rather than the accuracy.
+If you have worked with machine learning models before, I'm
+sure that you always looked at the accuracy.
+But for this model, especially since we haven't done anything
+to fix the imbalance yet, we're just going to focus on true
+positives, true negatives, false positives and false
+negatives.
+We especially want to reduce the number off false positives
+and false negatives because these are misleading values
+to understand what a false positive is.
+Let's take a look at this example.
+Suppose we have a model which identifies apples in a set
+of images.
+Now this model might miss take a tomato to be the same
+as an apple just because it's red and has a green stem.
+In this case, we would call it a false positive in the case
+of a false negative say that same model has not seen a green
+apple. It has not been trained on a data set containing green
+apples.
+So it thinks that this is not an apple.
+This becomes a false negative.
+Because although the model tells us that this is not an apple,
+we know that it actually is an apple.
+I'm sure by now you understood what a true positive
+and a true negative is.
+But if you're still a little confused, I'm going to explain
+it. If this tomato was correctly labeled as not an apple,
+it becomes a true negative.
+And if this apple was correctly labeled as an apple,
+it becomes a true positive.
+Keep in mind that the balance off a data set is a very
+important factor when it comes to classifications.
+Problems toe understand exactly how imbalance data affects
+the models performance.
+We're first going to build a model ah, logistic regression
+model using this imbalance data, then we'll observe
+the output.
+After that, I will teach you how to handle this imbalance
+data and we'll build a second model.
+Then we'll compare the performance of both these models right
+now. Let's split our data into a train and test set.
+Just type in losing floppy.
+Got pre process.
+Colin Train Ask right, hit, enter and in the new line
+you're going to type in the name of the data sex, so we're
+just going to call them train and test say that's equal
+to train.
+Teske split open the brackets, Specifics Hama,
+and we're going to divide it into 75%.
+So that means 75% off the data will go to the training set.
+So just type in point 75 hit run.
+You should get an output like this.
+In the next task, we're going to build the logistic
+regression model, obtain predictions and observed the output
+that we get.

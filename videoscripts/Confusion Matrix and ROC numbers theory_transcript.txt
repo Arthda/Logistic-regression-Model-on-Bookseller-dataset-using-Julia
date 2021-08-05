@@ -1,0 +1,31 @@
+If you remember, the data set that we're working
+with is imbalanced.
+This means that the accuracy alone is not the only way
+to measure the performance of our model.
+We also need to look at the number of true positives, false
+positives, true negatives and false negatives.
+The most convenient way to display all these values is to use
+a confusion matrix.
+Yeah, As you can see, the diagram.
+Ah, confusion matrix is a summary off prediction results.
+That is the predicted plus on the target variable or the true
+class. Okay, the count values are broken down depending
+on the class.
+If all the count values fall along the stag nall meaning true,
+positive or true Negative.
+Then you know your model is perfect.
+But in a real world scenario, this won't be the case.
+You will have a few false positives and false negatives.
+So our objective becomes to reduce the number of false
+positives and false negatives To make a work even easier.
+We're going to use something called the r O. C. Curve R O C.
+Stands for receiver operator characteristic.
+It is an evaluation metric for binary classification problems
+such as the one that we are doing that is identifying
+of a book belongs to the fiction or non fiction genre.
+It plots the curve using false positive rate as the X axis
+and true positive rate.
+As the Y axis.
+The region under the curve gives us the summary
+off the performance of our model because it measures how well
+our model can distinguish between the two classes.

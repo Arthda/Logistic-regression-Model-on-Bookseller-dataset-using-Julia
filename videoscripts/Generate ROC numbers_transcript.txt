@@ -1,0 +1,53 @@
+To generate the confusion matrix.
+Let's create the variable confusion, underscore Matrix
+and say that's equal to call the M L based package
+and the function rock from that package.
+Then open the bracket.
+First, we'll feed the actual values, so we're going to say
+prediction of the score.
+BF not Why underscore actual?
+Come on.
+Prediction on the score DF God, Why underscore?
+Painted, then hit Run and you should get the output like this.
+Here P stands for the positive values and stands
+for the negative values.
+Teepees transferred.
+True Positive T n stands for true negative.
+F P stands for false positive and FN stands for false
+negative.
+We're going to focus on the true positives, true negatives,
+false positives and false negatives, particularly.
+We want to remove the false negatives and false positives
+as an additional metric to gauge the performance off our
+model. Let's calculate the false negative rate.
+We're going to do that by using the false negative rate
+function.
+So that's false, Underscore negative of the school week, open
+the bracket and feed in the confusion matrix.
+It's run.
+The false negative rate is 47%.
+You could round it off to 48 if you want.
+This explains why the false negatives are so much more
+than the false positives.
+To recap the current performance off our model is 69 or you
+could take it a 70% and the number of false positives is 12.
+The number of false negatives is 30 and because the false
+negatives are a lot, we're going to take an extra metric.
+That is the false negative rate.
+And when we calculated we find that it is 47 or rounded
+off to 48% to improve the performance of our model, we
+can ignore the accuracy for now.
+And we're going to focus on the false negatives.
+We're going to try and reduce the false negatives
+and the false negative rate.
+One way to reduce the number of false negatives is to balance
+the data.
+So in the next task, we will use something known as the smote
+technique.
+That's S M. O T.
+To balance the data, and once again we will build a model.
+But this time we will use the balanced data.
+Then we will compare the performance of our current model.
+That is the accuracy, the number of false negatives and false
+positives, as well as the false negative rate with those
+off the new model.

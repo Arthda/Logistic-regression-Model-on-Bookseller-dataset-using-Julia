@@ -1,0 +1,71 @@
+Welcome to this guided project on logistic regression using
+Julia. My name is Juanita, and I will be your instructor
+for this guided project.
+I'm a certified data science instructor specializing
+in Python R and Julia for machine learning, as well
+as Tensorflow and Cara's for deep learning.
+Okay, My latest book, titled Deep Learning Projects Using
+Tensorflow, Too and Charas, was published by April's New York.
+I'm passionate about data science, and I want to make sure
+that you love it as much as I do.
+This project is for beginners who are new to the concept
+off logistic regression as well as Julia programming.
+Let's dive right in.
+You're I Julia notebook should open automatically as you
+can see on the screen, and all the packages
+that you require are already set up for you.
+All you need to do is pre compiled the packages, so just
+select the cell and hit run.
+Next, you'll see that to load the data.
+The cell has been filled in for you.
+So once again, select the cell and hit run.
+This is going to load in the data, and you'll even get
+a preview off what the data is about.
+The main objective off our data set is to classify a set
+of books into two genres that ISS fiction and nonfiction.
+Since this is a classifications problem and specifically
+a binary classification problem, we're going to use logistic
+regression.
+First, let's understand what logistic regression is.
+We'll do a bit of a comparison with linear regression as well,
+so that we can see the differences between them.
+So logistic regression is a set off rolling averages, just
+like linear regression.
+One major difference that we can see between them is
+that linear regression is always linear, hence the name.
+But logistic regression is nonlinear.
+In fact, it is a curve.
+In the case off binary classification, we required variables
+to be between zero and one in order for a model to give us
+a good output.
+In the case of linear regression, the values can increase
+beyond one, so this is going to cause trouble for our model.
+But logistic regression ensures that the values remain
+between zero and one.
+Another point is that in linear regression, we assume
+that the variance remains constant.
+But in the case off a binary variable, this is not true
+and so logistic regression is preferred.
+Now let's talk a bit about the formula for logistic
+regression.
+Logistic regression follows the formula.
+P is equal to one by one Place E to the power off Negative A
+plus H into X where P is the probability.
+Okay, he is the base off the natural log rhythm and a as well
+as H represent the para meters off the model.
+Now, in some places you will see that A and B are used.
+But in this case, A and H have been used.
+Don't worry too much about whether it is a B or in H
+because they are, after all, placeholders, so you can
+actually use any alphabet you want.
+H is used to adjust how quickly the probability changes
+along with the changing X values.
+Ex MP have a non linear relationship.
+This is why we get a curved line instead of a straight line.
+By now, you should have understood what logistic regression
+is why we use it in place of linear regression
+for classification onda the formula or the equation
+for logistic regression.
+In the next task, we're going to take a closer look at our
+data set and do a bit off pre processing so that we
+can get started on our logistic regression model.

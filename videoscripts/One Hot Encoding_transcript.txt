@@ -1,0 +1,74 @@
+In order to process our data to use it for our logistic
+regression model, we're going to use one hot encoding.
+So what?
+ISS one hot encoding When we have categorical variables
+in the case off our data set, we have to categorical
+variables which are fiction and nonfiction.
+In one hot encoding, we check if the categorical variables
+are present or not.
+We use one to indicate if the variable is present
+on zero to indicate if the variable is not present.
+So let's take the first row.
+Here we have fiction, which means under the Fiction column,
+we put one.
+And under the nonfiction column, we put zero in the next year.
+We have nonfiction, So in this case, in the Fiction Column,
+we have zero.
+And in the nonfiction column, we have one.
+It's the same for the next two Rose.
+By now, I'm pretty sure you get the idea in this manner.
+We have converted the categorical variable to a numeric value,
+and this is easily understood by our logistic regression
+model. In Julia, we have a package called latte.
+That's L.
+A T H E will be using it now, and this package has a one hot
+encode function, which makes our work easy and does the
+one hot encoding for us.
+Let's begin by calling the newly processed column target
+underscore Final and say that equal to Poppy got pre process.
+This is where we're calling in the lap package, and now
+we'll call the one hot and cold function within brackets
+specify the data frame as well as call him, which is
+the target column.
+So after typing in genre, I'm going to add a semi colon
+so that it doesn't print out all the values.
+But if you would like to see all the values you don't need
+to type in the semi colon hit run, it might take a little
+time. It might take a little time to process all the values,
+but once it's done, you can just check the names off the new
+columns by using the names Function and entering target
+Underscore Final.
+When you hit Run, This is what you should see, so all
+the columns are the same.
+But in addition to genre, we have non fiction and fiction.
+These in turn, will have only zeros and ones.
+Now that we have our target, where you builds ready.
+Let's select our futures.
+We're going to create a new data frame, and we'll call it
+specifics and say That's equal to the F.
+This is where we are selecting specific columns from the main
+data frame DF type in a colon, then a comma, and open
+another square bracket.
+Now, as discussed earlier, we're going to take only
+the numeric values that is the columns with only numeric
+values.
+So type in a colon and the first column is user raping.
+I've been user.
+Underscore reading karma.
+Pull in once again this time we're taking reviews.
+Hama Colon Christ Come on, Colon.
+Here, take your time here with typing in the column names
+because you need to make sure they are correct and use
+capitals wherever required.
+The final column that we're taking It's not going to be
+Chandra, because that has the categorical variables.
+Instead, we're going to select one of the newly created
+one hot encoded variables, So let's go with fiction.
+Type in a colon and tie pins Asian after the square bracket,
+type in another square bracket.
+Andi, I don't want it to print all the values, so I'm going
+to type in a semi colon.
+But if you want to see all the values, go ahead and skip that.
+All right, So we have selected are features and we have
+a target.
+Variables ready.

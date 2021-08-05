@@ -1,0 +1,124 @@
+Let's build a new model for our balance data set.
+We're going to call it F M one and say that's equal to acts
+formula.
+Open the bracket, Specify the target variable at a building.
+And now we're going to give in our features so we'll say,
+User on the school rating plus reviews, reviews.
+Let's Price and the final one is here After we need
+to compile, the models were going to say Log it.
+One is equal to G. L m.
+Open the bracket type in F M one, which is the formula.
+Com. A specific underscore.
+New. So that's specifics, underscoring you comma.
+Specify the family binomial.
+Enter a bracket after that type in comma and lug it link.
+Uh, this here is a mistake.
+Make sure that the Alex Capital for link so you can run it.
+This should be your output.
+This is the model that we have just built.
+Let's obtain predictions using our newly built model.
+We're going to save it as prediction one and say that's equal
+to call the predict function, open the bracket, then specify
+model, which is locked at one, and the data which were using
+which is a test data to prevent it from printing all the
+variables, which is going out of Colon, a semi colon and hit
+run. Okay, we have a predictions.
+Now let's turn them into ones and zeros, as we did previously,
+so we're going to call it prediction.
+Underscored class.
+And since this is a new set, let's just add a one at the end
+of it to differentiate between the previous variable that we
+created, which had the same name.
+Now open a square bracket, and this is where we're going to
+use the condition X is less than blank.
+Five. Having a space zero elves one and four x in prediction.
+One. So one stand semi colon from the self that's that's done.
+Now we're going to create a new data frame with the
+predictions, so we're going to call it prediction, underscore
+Newt and say that's equal to data frame within the bracket.
+Why underscore actual one is equal to test dot fiction comma
+y underscore predicted.
+One is equal to prediction.
+Underscore clasp.
+One prob underscore predicted.
+These are the probability values.
+Don't forget the one before the equal to right, So just go
+back there, put the one, and we're going to say Prediction.
+One. After the bracket, enter a semi colon and hit run.
+Now we will segregate only the correctly classified samples.
+We're going to call them diction, underscore new, not
+correctly underscore classified one and see that's equal to
+the spelling of correctly here.
+We just need one more are Just check that.
+Okay, now we'll say That's equal to predictions.
+Underscore mute dot Why underscore actual one Doc's equal to
+equal to prediction.
+Underscoring you, Doctor.
+Why underscore?
+Predicted one at a semi colon and hit run.
+All right, now we're going to check the accuracy of the model
+to get the accuracy off our new model.
+We're going to create the variable accuracy, underscore Final
+and say that's equal to, I mean calculating mean using the
+main function off the prediction on the score.
+New dot correctly underscore classified one samples.
+Okay, so we achieved an accuracy off overall 66%.
+You could round it off to 67%.
+Let's, um, display the accuracy off our first model once more
+so that we can do a comparison.
+Last time we just called it accuracy.
+Last time it was 65 percent, so we increased it, which is a
+good thing.
+Already.
+We can see that just by balancing the data, we were even able
+to increase the accuracy.
+But as you remember in the very beginning, I told you that
+our main focus is on false negatives, especially for this
+data set.
+So let's create a confusion matrix.
+We're going to call it confusion on the Score matrix on the
+score final and say, That's equal kip M. L.
+Place. So this is the package in Julia dot r o c The rock
+function.
+Open the bracket and feed in the rebels.
+Prediction.
+Underscore new dot Why underscore actual one Mama Prediction.
+Underscore Nuke God Why the score predicted one hit run and
+you should get the rock numbers here.
+Let's do a side by side comparison by calling the previous
+confusion matrix, and we print out the values so we can see
+that the positives are the same.
+62 negatives or 91 the true positives have increased to 37.
+Previously, they were only 29 so this is a good thing.
+The true negatives used to be 71.
+Now they have reduced to 65 This could be because off the
+smoke function.
+But don't worry, because our main focus is on reducing the
+number of false negatives.
+Now let's take a look at the false positives.
+We got 26 in our new model, and previously they were 20 so
+the number has increased by six.
+But once again, it's all right, because that's not our main
+focus. Finally, let's take a look at the false negatives.
+It's 25 in our new model, and previously it was 33.
+So we have achieved our goal off improving the model for a
+current data set.
+Just to be short, let's generate the false negative rate.
+We'll do this by using the false underscore negative of the
+score rate function, open the bracket and type in confusion.
+Underscore matrix underscore Final oh hit, run.
+And once again, let's generate the false negative rate for
+our first models by simply copying and pasting this line of
+cold right here and changing confusion Matrix final to just
+confusion matrix.
+Let's run.
+Previously, the false negative rate was 53% but now it has
+reduced to 40% which is good for our model.
+Congratulations on completing this guided project.
+I hope that you learned a lot about Julia and how to built
+logistic regression models in Julia.
+Of course, this model was just for learning how to balance
+your data and build a simple logistic regression model.
+There is scope to improve upon this model a lot.
+So I encourage you to play around with this code and see how
+you can improve the model.

@@ -1,0 +1,134 @@
+Let's correct the balance off our data.
+First, to refresh your memory, I'm going to generate
+the classes once again so that you can see the imbalance
+in the data.
+You don't need to do this in your notebook, but if you want
+to, then you need to create an extra cell.
+Last time we call the variable classes so we don't need
+to create the variable again.
+We can just print it.
+And here we have the classes since we took the column fiction,
+Anything labeled us False means that it is nonfiction,
+and anything labeled us true means that it is fiction.
+So we're going to use the smote technique to balance our data.
+Smote is the abbreviation for synthetic minority
+over sampling technique.
+Yes, booty and E are taken from the word technique.
+Don't worry.
+It's a lot simpler than it sounds, and you're going to see
+with a demonstration.
+We're first going to use the smoke technique to balance our
+data, and then I'll explain what happened.
+In fact, by the time we're done balancing our data, you're
+pretty much going to understand it yourself.
+The smoke function divides the data into two parts,
+so we're going to call them x two.
+And why to.
+And we're going to say that's equal.
+To call the smoke function, Open the bracket type
+in specifics.
+If you recall specifics, contains the features
+that we selected for a model, and then you're going to open
+a square bracket, an exclamation point and another square
+bracket, then a colon, and start typing in the name off
+the features that we selected.
+So these are user on the school reading comma.
+Always type in a colon before a new feature.
+Reviews on a Colin Price.
+I'm a colon here.
+If your time writing this down, make sure you use the correct
+capitalization.
+If you don't write any of this correctly, you're going to get
+um, errors in your code after both the square brackets, type
+in a comma, then type in specifics once again and this time
+type and got a fiction, which is the final column off
+the beta frame.
+Then type in a coma, and then we're going to say K is equal
+to one.
+If you are familiar with cave fold, cross validation or K
+nearest neighbors, you know that K is just a placeholder
+to indicate that it is a variable and we can decide what
+number we want for that variable.
+So here we're just going to say one.
+We're keeping it simple because our data is simple.
+You'll find that this is important because as you increase
+the number off groups, balancing becomes more challenging.
+Now we're going to type in PCT underscore under Andi To save
+time, I'm directly going to give you the correct variables.
+But I do encourage you to test it out for yourself and see
+the different results that you get.
+For now.
+Just follow along with what I'm doing so that you understand
+what smoke is.
+We're going to keep PCT underscore under as 200 and PCT
+underscored over as 100.
+Now you must be wondering why I chose thes specific values.
+Let's take a look at the imbalance in our data.
+Just to be clear, imbalance means that both the samples are
+not equal.
+We've got 310 here and to 40 here, so they're unequal numbers.
+But to balance the data, we need them to be equal.
+Now when we say PCT under, it means that we ideally want
+the number of samples to be under 200.
+Why 200?
+Because the maximum number of samples is 310 and the minimum
+is 240.
+So overall, if we go with 200 we have a better chance
+of achieving balance.
+Likewise, when we check out PCT underscore over, we set it
+at 100.
+This means we want the minimum value to be 100 which is again
+a safe number because the safest minimum for both of them is
+100 now.
+I don't want all the variables to be printed out.
+So after the bracket I'm going to add a semi colon Onda.
+Let's just come back to the beginning here.
+I think I forgot to mention this exclamation indicates
+that we do not want are selected features to be balanced
+by the smoke function.
+If we don't specify this exclamation here, then all
+the columns get balanced and this is going to have a negative
+impact on our final analysis.
+Now you can hit run The cell might take a little time.
+Okay, Now that it is done, let's generate the classes.
+Once again, we'll save them in a new variable called balanced
+the score classes and we'll say that's equal to freak People.
+Open the bracket and within the brackets, we're going
+to specify just y two now hit, run on, Look at that.
+Are newly balanced data is that for 18 you must be wondering
+why it's settled on 4 80.
+So let's understand what smoke does the smoke function
+over samples The data.
+This means that it will always generate synthetic values.
+If smote Onley over sampled the true classes, then we
+would have some synthetic data for true and all the original
+data for false.
+This would negatively impact the accuracy off our model.
+So to help reduce the negative impacts on the accuracy
+while at the same time balancing the data, the smoke function
+generates a few synthetic variables for the false class.
+That is about 1 70 synthetic variables for the false class,
+and it generates 2 40 additional synthetic variables
+for the true class.
+In this way, it was able to achieve balance while having the
+least amount off negative impact on our accuracy.
+Let's create a new data frame, and we'll call it specifics
+on this score new and say that's equal to we're going
+to contact neat or a catch y two to the specifics data set.
+In order to add y to as a new column, we're going to use
+the H cat function and within brackets, we're going
+to specify x two comma y cu.
+When we hit Run, we get the new data frame.
+But as you can see, the new data frame does not have
+an appropriate name.
+It's just named X one.
+So for our understanding, we're going to rename it by using
+the rename function.
+Have an exclamation and open the bracket.
+Then type in specifics.
+Underscore new.
+Tell me Poland.
+This is where we indicate that we want X one to be renamed,
+so we're going to say X right and say, colon target.
+This is the new name hit run, and you can see that the column
+has now been renamed as target.

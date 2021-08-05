@@ -1,0 +1,84 @@
+To build our model.
+We first specify the formula.
+Let's call it F m and say that's equal to that formula.
+Now when we say formula, it just means we're specifying what
+our target variable is, on, what our response variables are
+or the features that we just selected.
+So the target variable is fiction at the till day and then
+type in all the features.
+So that's user on the school reading French reviews.
+That's Christ Yes Year.
+Make sure you capitalize the names of the features.
+If you don't, then it might affect your results.
+Now we're going to build the model, so we're going to call it,
+log it and say That's equal to G L M.
+Open the bracket, then type in F m.
+So that's the formula.
+Then say that we're using the train data.
+And to indicate that this is supposed to be a logistic
+regression model, we need to specify two things.
+First of all, that the model belongs to the binomial family.
+Make sure you had a bracket and that we want the logic link.
+Make sure that the L is capital and add a bracket shuras.
+Well, this is the completed model.
+When you hit run, your output should look something like this.
+If you like, you can pause the video here and take a closer
+look at the model, but there's nothing in particular
+that we need to look at right now.
+So let's go straight to the predictions to obtain
+the predictions.
+We're going to create the very bold predictions and say
+that's equal to called predict function when the bracket
+on this is where you're going to specify the model that we
+just created.
+So log it and this time say that you won't use the test data
+with it.
+I'm going to add a semi colon at the end
+so that it doesn't print out each iterations result.
+But if you want, you can print out the results.
+So hit, run.
+Now that that's done, let's convert the output in the form
+of zeros and once to do this, we're going to type
+in prediction on the score class.
+Now we're going to set a condition when you would say, if X
+is less than 0.5 Alex one and for X in prediction, make sure
+it's predictions because we're calling this here close
+to square bracket type in, uh, semi colon so that the results
+stone keep getting printed and hit.
+Run. So what this line does is it will go through each result
+that was obtained at each iteration in the model and check if
+the value is less than 0.5.
+If it is less than 0.5, it will convert that value to zero.
+But if it's greater than 0.5, it'll convert that value to
+what we will now.
+Take our results and turn it into a data frame by naming the
+data frame.
+Prediction.
+Underscore D F and say that's equal to eight.
+A frame.
+Open the bracket.
+Why underscore actual is equal to test, not fiction.
+Obama. Why underscore Predicted is equal to prediction.
+Underscore class.
+Um A. Trump, the score predicted, is equal to predictions.
+Hit run.
+So this data frame contains the actual or target variable.
+Then the predicted variables and the probability off that
+prediction.
+This helps us to identify the total number off false
+positives and false negatives were going to get the actual
+false positives and false negatives in the next step.
+Create the variable addiction underscore BF got correctly,
+underscore classified and see That's equal to prediction.
+Underscore.
+BF got Why underscore actual docked equal to make sure you
+the truth.
+Um, addiction that the Scordia not why Underscore predicted
+at semi Colon and hit run this line is pretty straightforward.
+But if you're still confused, all we're doing is comparing
+the actual values with the predicted values and making sure
+that they are exactly equal to calculate the accuracy.
+We're going to create the variable accuracy and say that's
+equal to the mean off the predicted values.
+So that ISS prediction underscore B s got directly underscore
+that if, like it run.
